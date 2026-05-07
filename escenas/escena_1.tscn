@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cy4no2jl4gbqs"]
+
+[ext_resource type="Texture2D" uid="uid://co8bwo2etpcvh" path="res://icon.svg" id="1_4j4id"]
+
+[node name="Escena_1" type="Node2D" unique_id=1630233977]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=401375835]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=784614260]
+texture = ExtResource("1_4j4id")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2112173981]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=564559062]
+position = Vector2(2, 172)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=956387893]
+modulate = Color(0, 0.48475134, 0.2532252, 1)
+texture = ExtResource("1_4j4id")
