@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c56g7o6qp2t10"]
+
+[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://assets/pngwing.com.png" id="1_k7ve7"]
+
+[node name="TextBox" type="Node2D" unique_id=1436936838]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1054788345]
+scale = Vector2(0.57736504, 0.55440176)
+texture = ExtResource("1_k7ve7")
+
+[node name="Player_name" type="RichTextLabel" parent="Sprite2D" unique_id=1372143535]
+offset_left = -655.97253
+offset_top = -146.83595
+offset_right = -319.29184
+offset_bottom = -106.83595
+metadata/_edit_use_anchors_ = true
+
+[node name="Text_box" type="RichTextLabel" parent="Sprite2D" unique_id=508348042]
+offset_left = -693.8627
+offset_top = -80.09235
+offset_right = 698.32825
+offset_bottom = 109.45953
+metadata/_edit_use_anchors_ = true

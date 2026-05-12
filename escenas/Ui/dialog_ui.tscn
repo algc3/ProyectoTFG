@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dqksadmu4y2n8"]
+
+[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://assets/pngwing.com.png" id="1_0vhrr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tiq6o"]
+
+[node name="DialogUi" type="Control" unique_id=289243098]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="." unique_id=1582334118]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=2127495279]
+visible = false
+position = Vector2(4, -64)
+scale = Vector2(0.57736504, 0.55440176)
+texture = ExtResource("1_0vhrr")
+
+[node name="Player_name" type="RichTextLabel" parent="Control/Sprite2D" unique_id=422491475]
+offset_left = -655.97253
+offset_top = -146.83595
+offset_right = -319.29184
+offset_bottom = -106.83595
+metadata/_edit_use_anchors_ = true
+
+[node name="Text_box" type="RichTextLabel" parent="Control/Sprite2D" unique_id=1483928533]
+offset_left = -693.8627
+offset_top = -80.09235
+offset_right = 698.32825
+offset_bottom = 109.45953
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control" unique_id=1451207591]
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/CanvasLayer" unique_id=292460292]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = -236.0
+offset_right = 576.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_tiq6o")
+
+[node name="TextureRect" type="TextureRect" parent="Control/CanvasLayer/PanelContainer" unique_id=1825396889]
+layout_mode = 2
+texture = ExtResource("1_0vhrr")
+expand_mode = 3
+
+[node name="Player_name" type="RichTextLabel" parent="Control/CanvasLayer/PanelContainer/TextureRect" unique_id=1228056651]
+layout_mode = 1
+offset_right = 336.6807
+offset_bottom = 40.0
+scale = Vector2(0.6, 0.6)
+pivot_offset_ratio = Vector2(0.995, 1.23)
+theme_override_font_sizes/normal_font_size = 28
+text = "Lorem ipsum"
+metadata/_edit_use_anchors_ = true
+
+[node name="Text_box" type="RichTextLabel" parent="Control/CanvasLayer/PanelContainer/TextureRect" unique_id=250420678]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -461.5
+offset_top = -192.0
+offset_right = 1317.951
+offset_bottom = 23.002014
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.565, 0.565)
+pivot_offset_ratio = Vector2(-0.05, 0.235)
+theme_override_font_sizes/normal_font_size = 32
+text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="Control/CanvasLayer/PanelContainer" unique_id=701295878]
+layout_mode = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="Control/CanvasLayer/PanelContainer" unique_id=901292503]
+position = Vector2(892, 186)
+scale = Vector2(0.66, 0.66)
+polygon = PackedVector2Array(0, 0, 50, 25, 26.052612, 36.973724, 0, 50)
