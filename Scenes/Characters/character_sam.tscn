@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ctp47t1lljsd"]
+
+[ext_resource type="Texture2D" uid="uid://c6apcwe07yqj7" path="res://Assets/characters/Sam/Sam_Serious.png" id="1_5q37l"]
+[ext_resource type="Texture2D" uid="uid://dw00wi6ae8dfa" path="res://Assets/characters/Sam/Sam_Surprised.png" id="2_t7s07"]
+[ext_resource type="Texture2D" uid="uid://c822hb6hyoqxs" path="res://Assets/characters/Sam/Sam_downman.png" id="3_cierb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7v8cj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5q37l")
+}],
+"loop": true,
+"name": &"Serius",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_t7s07")
+}],
+"loop": true,
+"name": &"Surprised",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cierb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Character_Sam" type="Node2D" unique_id=1124407185]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=38448378]
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_7v8cj")

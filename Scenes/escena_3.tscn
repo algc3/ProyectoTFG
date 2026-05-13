@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://c82qqsvjhkhyj"]
+
+[ext_resource type="Script" uid="uid://0fe5024kui8b" path="res://Scripts/escena_1.gd" id="1_cpim6"]
+[ext_resource type="Texture2D" uid="uid://bl3j50nyonhe3" path="res://Assets/Team_office.png" id="2_cpim6"]
+[ext_resource type="PackedScene" uid="uid://dqksadmu4y2n8" path="res://Scenes/Ui/dialog_ui.tscn" id="3_uwnlu"]
+[ext_resource type="PackedScene" uid="uid://w1uskoy7votx" path="res://Scenes/Characters/character_mike.tscn" id="4_tbnqy"]
+[ext_resource type="PackedScene" uid="uid://cvolns7fpqc1w" path="res://Scenes/Characters/character_mira.tscn" id="5_uwnlu"]
+[ext_resource type="PackedScene" uid="uid://br63uctcg2u2x" path="res://Scenes/Characters/character_daniel.tscn" id="6_7u3i7"]
+
+[node name="Escena_3" type="Node2D" unique_id=1630233977]
+script = ExtResource("1_cpim6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2029559192]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=973402156]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cpim6")
+expand_mode = 1
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2126731527]
+layer = 0
+
+[node name="DialogUi" parent="CanvasLayer2" unique_id=289243098 instance=ExtResource("3_uwnlu")]
+unique_name_in_owner = true
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=234905596]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Character_Mike" parent="CanvasLayer2/Control" unique_id=1124407185 instance=ExtResource("4_tbnqy")]
+position = Vector2(0, -223.86)
+scale = Vector2(1.335, 1.335)
+
+[node name="Character_Mira" parent="CanvasLayer2/Control" unique_id=942473741 instance=ExtResource("5_uwnlu")]
+position = Vector2(331.55, -188.815)
+scale = Vector2(0.955, 0.955)
+
+[node name="Character_Daniel" parent="CanvasLayer2/Control" unique_id=1649650519 instance=ExtResource("6_7u3i7")]
+position = Vector2(-263.3, -197.36)

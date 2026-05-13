@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c56g7o6qp2t10"]
 
-[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://assets/pngwing.com.png" id="1_k7ve7"]
+[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://Assets/pngwing.com.png" id="1_k7ve7"]
 
 [node name="TextBox" type="Node2D" unique_id=1436936838]
 

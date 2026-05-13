@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dqksadmu4y2n8"]
 
-[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://assets/pngwing.com.png" id="1_0vhrr"]
+[ext_resource type="Texture2D" uid="uid://b6hwuh3m8qqea" path="res://Assets/pngwing.com.png" id="1_0vhrr"]
+[ext_resource type="Script" uid="uid://tvyd183facy3" path="res://Scripts/dialog_ui.gd" id="1_5yjdr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tiq6o"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5yjdr")
 
 [node name="Control" type="Control" parent="." unique_id=1582334118]
 layout_mode = 1
@@ -24,26 +26,6 @@ offset_top = -40.0
 offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=2127495279]
-visible = false
-position = Vector2(4, -64)
-scale = Vector2(0.57736504, 0.55440176)
-texture = ExtResource("1_0vhrr")
-
-[node name="Player_name" type="RichTextLabel" parent="Control/Sprite2D" unique_id=422491475]
-offset_left = -655.97253
-offset_top = -146.83595
-offset_right = -319.29184
-offset_bottom = -106.83595
-metadata/_edit_use_anchors_ = true
-
-[node name="Text_box" type="RichTextLabel" parent="Control/Sprite2D" unique_id=1483928533]
-offset_left = -693.8627
-offset_top = -80.09235
-offset_right = 698.32825
-offset_bottom = 109.45953
-metadata/_edit_use_anchors_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Control" unique_id=1451207591]
 
@@ -66,6 +48,7 @@ texture = ExtResource("1_0vhrr")
 expand_mode = 3
 
 [node name="Player_name" type="RichTextLabel" parent="Control/CanvasLayer/PanelContainer/TextureRect" unique_id=1228056651]
+unique_name_in_owner = true
 layout_mode = 1
 offset_right = 336.6807
 offset_bottom = 40.0
@@ -76,6 +59,7 @@ text = "Lorem ipsum"
 metadata/_edit_use_anchors_ = true
 
 [node name="Text_box" type="RichTextLabel" parent="Control/CanvasLayer/PanelContainer/TextureRect" unique_id=250420678]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

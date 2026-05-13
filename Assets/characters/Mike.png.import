@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b63e636fvgv7l"
-path="res://.godot/imported/wmremove-transformed.jpeg-d01128f61ef97ecac93b64160c0a1c2e.ctex"
+uid="uid://bp6xh7r8u5kj0"
+path="res://.godot/imported/Mike.png-69a7fdb772c529a2de25624d721a5d7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/wmremove-transformed.jpeg"
-dest_files=["res://.godot/imported/wmremove-transformed.jpeg-d01128f61ef97ecac93b64160c0a1c2e.ctex"]
+source_file="res://Assets/characters/Mike.png"
+dest_files=["res://.godot/imported/Mike.png-69a7fdb772c529a2de25624d721a5d7c.ctex"]
 
 [params]
 

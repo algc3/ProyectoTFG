@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b63e636fvgv7l"
-path="res://.godot/imported/wmremove-transformed.jpeg-d01128f61ef97ecac93b64160c0a1c2e.ctex"
+uid="uid://36x0s4bpp6no"
+path="res://.godot/imported/Mira.png-0243f0f9021325e275c72f1190456763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/wmremove-transformed.jpeg"
-dest_files=["res://.godot/imported/wmremove-transformed.jpeg-d01128f61ef97ecac93b64160c0a1c2e.ctex"]
+source_file="res://Assets/characters/Mira.png"
+dest_files=["res://.godot/imported/Mira.png-0243f0f9021325e275c72f1190456763.ctex"]
 
 [params]
 

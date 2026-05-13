@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cvolns7fpqc1w"]
+
+[ext_resource type="Texture2D" uid="uid://36x0s4bpp6no" path="res://Assets/characters/Mira.png" id="1_gqetl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_akwd3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gqetl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Character_Mira" type="Node2D" unique_id=1124407185]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=38448378]
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_akwd3")

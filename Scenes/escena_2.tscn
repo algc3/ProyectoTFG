@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cnnkddfedcrhw"]
+
+[ext_resource type="Script" uid="uid://0fe5024kui8b" path="res://Scripts/escena_1.gd" id="1_221c6"]
+[ext_resource type="Texture2D" uid="uid://bmh1gogvdasln" path="res://Assets/Office_sam.png" id="2_221c6"]
+[ext_resource type="PackedScene" uid="uid://dqksadmu4y2n8" path="res://Scenes/Ui/dialog_ui.tscn" id="3_ddgiw"]
+[ext_resource type="PackedScene" uid="uid://ctp47t1lljsd" path="res://Scenes/Characters/character_sam.tscn" id="4_t3toy"]
+
+[node name="Escena_2" type="Node2D" unique_id=1630233977]
+script = ExtResource("1_221c6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2029559192]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=973402156]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_221c6")
+expand_mode = 1
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2126731527]
+layer = 0
+
+[node name="DialogUi" parent="CanvasLayer2" unique_id=289243098 instance=ExtResource("3_ddgiw")]
+unique_name_in_owner = true
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=234905596]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Character_Sam" parent="CanvasLayer2/Control" unique_id=1124407185 instance=ExtResource("4_t3toy")]
+unique_name_in_owner = true
+position = Vector2(0, -223.86)

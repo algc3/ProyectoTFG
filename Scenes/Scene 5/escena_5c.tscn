@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bcb7vd507xnce"]
+
+[ext_resource type="Script" uid="uid://0fe5024kui8b" path="res://Scripts/escena_1.gd" id="1_1oalp"]
+[ext_resource type="Texture2D" uid="uid://creqjtrugoyp6" path="res://Assets/Scn5_AmbitionChoice.png" id="2_1oalp"]
+[ext_resource type="PackedScene" uid="uid://dqksadmu4y2n8" path="res://Scenes/Ui/dialog_ui.tscn" id="3_vmvwb"]
+
+[node name="Escena_5c" type="Node2D" unique_id=1630233977]
+script = ExtResource("1_1oalp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2029559192]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=973402156]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1oalp")
+expand_mode = 1
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=2126731527]
+layer = 0
+
+[node name="DialogUi" parent="CanvasLayer2" unique_id=289243098 instance=ExtResource("3_vmvwb")]
+unique_name_in_owner = true

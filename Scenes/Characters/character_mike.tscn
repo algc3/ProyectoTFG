@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://w1uskoy7votx"]
+
+[ext_resource type="Texture2D" uid="uid://bp6xh7r8u5kj0" path="res://Assets/characters/Mike.png" id="1_44lry"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qe361"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_44lry")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Character_Mike" type="Node2D" unique_id=1124407185]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=38448378]
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_qe361")
